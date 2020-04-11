@@ -1,0 +1,52 @@
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="popup.js"></script>
+    <script src="content.js"></script>
+    <body>
+        <div id=title_div>
+            <h1>Conscious Cook</h1>
+            <h3 id="thankyou">Thank you for making the choice to use Conscious Cook!</h2>
+        </div>
+    <h3 id="settings_text"></h3>
+
+    <div id="settings">
+        <label for="diets">Choose a diet:</label>
+
+        <select id="diets">
+            <option value="Regular">Regular</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Vegetarian">Vegetarian</option>
+          </select>
+    </div>
+
+
+    <table id="main_table"> 
+        <thead>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Price</th>
+                    <th>Calories</th>
+                    <th>Glycemic Index</th>
+                    <th>Total Carbon Footprint</th>
+                </tr>
+        </thead>
+    
+        <tbody>
+            <tr>
+                <td class="healthy">Eggs</td>
+                <td>$14.00</td>
+                <td>180 Calories</td>
+                <td>12</td>
+                <td>12 tons/mmg</td>
+            </tr>
+            <tr>
+                <td class="unhealthy">Steak</td>
+                <td>$25.00</td>
+                <td>200 Calories</td>
+                <td>13</td>
+                <td>15 tons/mmg</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

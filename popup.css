@@ -1,0 +1,68 @@
+body{
+    background-color: #00cc99;
+    width: fit-content;
+}
+
+
+td {
+    background-color: whitesmoke;
+
+}
+
+th{
+    padding: 0.25cm;
+}
+
+thead{
+    font-size: Larger;
+    border-spacing: 0cm;
+}
+
+table{
+}
+
+.healthy{
+    color: green;
+}
+
+.unhealthy{
+    color: red;
+}
+
+
+
+h2{ 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#settings{
+    background-color: white;
+    position: relative;
+    padding: 0.10cm;
+    max-height: fit-content;
+}
+
+
+thead{
+    background-color: aquamarine;
+}
+
+#dietTitle{
+    font-size: large;
+}
+
+
+#title_div{
+    height: fit-content;
+    width: 98%;
+    padding-left: 0.1cm;
+    border:2px solid black;
+    background-color: white;
+}
+
+
+#thankyou{
+    position: relative;
+    bottom: 10px;
+}
