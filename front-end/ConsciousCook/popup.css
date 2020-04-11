@@ -1,37 +1,24 @@
 body{
-    min-width: 200;
-    background-color: #e6ffe6;
+    background-color: #00cc99;
+    width: fit-content;
 }
 
-h1{
-    font-size: 32;
-}
 
 td {
-    border-collapse: collapse;
-    border: 1px solid black;
-    border-spacing: 0cm;
-    background-color: white;
+    background-color: whitesmoke;
 
 }
 
 th{
     padding: 0.25cm;
-    border: 2px solid black;
-    border-collapse: collapse;
-    border-spacing: 0cm;
 }
 
 thead{
-    border-collapse: collapse;
     font-size: Larger;
     border-spacing: 0cm;
 }
 
 table{
-    border-spacing: 0cm;
-    border-collapse: collapse;
-    border: 2px solid black;
 }
 
 .healthy{
@@ -42,27 +29,40 @@ table{
     color: red;
 }
 
+
+
 h2{ 
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#settings_text{
-    float: left;
-}
 
 #settings{
     background-color: white;
     position: relative;
-    bottom: 10px;
     padding: 0.10cm;
-    float:right;
-    display: inline-block;
+    max-height: fit-content;
 }
+
 
 thead{
     background-color: aquamarine;
 }
 
 #dietTitle{
-    font-size: larger;
+    font-size: large;
+}
+
+
+#title_div{
+    height: fit-content;
+    width: 98%;
+    padding-left: 0.1cm;
+    border:2px solid black;
+    background-color: white;
+}
+
+
+#thankyou{
+    position: relative;
+    bottom: 10px;
 }
