@@ -1,30 +1,25 @@
 <html lang="en">
     <link rel="stylesheet" type="text/css" href="popup.css">
-<body>
-    <h1 id="title">Conscious Cook</h1>
-    <h3>Thank you for making the choice to become a Conscious Cook!</h2>
-    
-    <h2 id="settings_text">Current Recipe: Scrambled Eggs</h2>
-    
+    <script src="popup.js"></script>
+    <script src="content.js"></script>
+    <body>
+        <div id=title_div>
+            <h1>Conscious Cook</h1>
+            <h3 id="thankyou">Thank you for making the choice to use Conscious Cook!</h2>
+        </div>
+    <h3 id="settings_text"></h3>
+
     <div id="settings">
-        <p id="dietTitle">Select a Diet.</p>
-    <div>
-      <input type="radio" id="regular" name="drone" value="regular"
-             checked>
-      <label for="regular">Regular</label>
-    </div>
-    <div>
-      <input type="radio" id="vegetarian" name="drone" value="vegetarian">
-      <label for="vegetarian">Vegetarian</label>
-    </div>
-    
-    <div>
-      <input type="radio" id="vegan" name="drone" value="vegan">
-      <label for="vegan">Vegan</label>
-    </div>   
+        <label for="diets">Choose a diet:</label>
+
+        <select id="diets">
+            <option value="Regular">Regular</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Vegetarian">Vegetarian</option>
+          </select>
     </div>
 
-    
+
     <table id="main_table"> 
         <thead>
                 <tr>
@@ -51,14 +46,7 @@
                 <td>13</td>
                 <td>15 tons/mmg</td>
             </tr>
-
-
         </tbody>
-
-
-
     </table>
-    
 </body>
-
 </html>
