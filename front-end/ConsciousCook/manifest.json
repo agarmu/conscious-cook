@@ -13,5 +13,8 @@
         "default_title": "Conscious Cook",
         "default_description": "A tool to reduce your carbon footprint."
         
-    }
+    },
+    "permissions": [
+        "tabs"
+    ]
 }
