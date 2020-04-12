@@ -90,14 +90,15 @@ def recipe_info():
             n_units = "unknown"
         per_unit_stats = {
             "calories": str(round(food_row["Calories-per-gram"] * grams_per_orig_unit)),
-            "carbon": str(food_row["CO2-percent"]),
-            "cost": str(round(food_row["Price-per-gram"] * grams_per_orig_unit))
+            "carbon": str(round(food_row["CO2-percent"] * grams_per_orig_unit)),
+            "cost": str(round(food_row["Price-per-gram"] * grams_per_orig_unit)),
         }
         info[food_name] = {
             "units": units,
             "n_units": n_units,
             "per_unit": per_unit_stats,
             "element_id": request_json[ingredient],
+            "carbon_rating": str(food_row["CO2-percent"]/food_row["Calories-per-gram"]),
             "substitutions": {
                "substitute1_name":{
                     "per_unit": {
