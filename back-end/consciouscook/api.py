@@ -64,7 +64,7 @@ def recipe_info():
 
         quantity = get_quantity(ingredient)
         if isinstance(quantity, float):
-            if "egg" in food_name:
+            if "egg" in ingredient:
                 grams_per_orig_unit = 60
             else:
                 continue
@@ -72,6 +72,7 @@ def recipe_info():
             units = "eggs"
             n_units = str(quantity)
         elif quantity:
+            print("chicken")
             find_units = True
             try:
                 food_mass = quantity.to('gram').magnitude
@@ -80,6 +81,8 @@ def recipe_info():
                  # try volumetric
                 try: 
                     conversion_factor = food_row["Density (grams-per-cup)"]
+                    if str(conversion_factor) == "nan":
+                        continue
                     food_mass = quantity.to('cup') * conversion_factor * ureg.gram/ureg.cup
                     food_mass = food_mass.to_reduced_units().magnitude
                     grams_per_orig_unit = food_mass/quantity.magnitude 
