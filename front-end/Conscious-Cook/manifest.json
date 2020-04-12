@@ -21,7 +21,8 @@
     {
       "matches": ["*://*.allrecipes.com/recipe/*"],
       "run_at": "document_idle",
-      "js": ["contentScript.js", "popper.js"]
+      "js": ["vex.combined.min.js", "contentScript.js"],
+      "css": ["vex-theme-default.css"]
     }
   ],
 

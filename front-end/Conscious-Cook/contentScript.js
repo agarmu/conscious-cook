@@ -1,3 +1,4 @@
+vex.defaultOptions.className = 'vex-theme-default'
 function foodParser() {
   let resp = "not a recipe";
   if ((location.hostname == "www.allrecipes.com" || location.hostname == "allrecipes.com") && !location.search.includes("recipeType")) {
@@ -56,7 +57,7 @@ function foodParser() {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(test) // write data here instead of test once backend is working
+        body: JSON.stringify(data) // write data here instead of test once backend is working
       });
       const content = await rawResponse.json();
     
@@ -73,6 +74,7 @@ function foodParser() {
 window.onload = foodParser;
 
 function jamesthing(data) {
+  console.log(data);
   let total_carbon = 0;
   let ingredient_total = 0;
   let total_calories = 0;
@@ -87,24 +89,24 @@ function jamesthing(data) {
     let cost = data[Object.keys(data)[x]]["per_unit"]["cost"] * data[Object.keys(data)[x]]["n_units"];
     total_cost += cost;
     let subs = data[Object.keys(data)[x]]["substitutions"];
-    let carbon = data[Object.keys(data)[x]]["carbpn_rating"];
+    let rating = data[Object.keys(data)[x]]["carbon_rating"];
     ingredient_total++;
-    displayData(id, food, carbon, calories, cost, subs);
+    displayData(id, food, rating, calories, cost, subs, carbon);
   }
   let average_carbon = total_carbon / total_calories;
   alert(average_carbon)
   title = document.getElementsByClassName("recipe-print__title")[0].innerHTML;
   let color = "black";
-  if (average_carbon > 0.0 && average_carbon <= 0.25) {
+  if (average_carbon > 0.0 && average_carbon <= 0.17) {
     color = "green";
     document.getElementsByClassName("recipe-print__title")[0].innerHTML = title + " - Earth-Friendly Choice!";
-  } else if (average_carbon > 0.25 && average_carbon <= 0.66) {
+  } else if (average_carbon > 0.17 && average_carbon <= 0.5) {
     color = "#fcca03";
     document.getElementsByClassName("recipe-print__title")[0].innerHTML = title + " - Fairly Small Carbon Footprint";
-  } else if (average_carbon > 0.66 && average_carbon <= 2.0) {
+  } else if (average_carbon > 0.5 && average_carbon <= 1.7) {
     color = "orange";
     document.getElementsByClassName("recipe-print__title")[0].innerHTML = title + " - Maybe find something greener?";
-  } else if (average_carbon > 2.0) {
+  } else if (average_carbon > 1.7) {
     color = "red";
     document.getElementsByClassName("recipe-print__title")[0].innerHTML = title + " - Consider the planet!";
   }
@@ -113,25 +115,28 @@ function jamesthing(data) {
   // make the actual recipe title (the 'recipe-print__title' class) a hover over effect as well, listing its 
   // total_cost, total_calories, average_carbon
 }
-
-function showPreview(reference, carbon, calories, cost, substitutions){
-  return null
+function showPreview(ref, food, carbon, calories, cost, substitutions, totalco2){
+  alert(`Carbon footprint: ${totalco2} grams per unit - equivalent to ${(totalco2/8887).toFixed(2)} gallons of gas!
+        Calories: ${calories} per unit
+        Cost: ${cost} per unit`)
 }
 
-function displayData(id, food, carbon, calories, cost, substitutions){
+function displayData(id, food, carbon, calories, cost, substitutions, totalco2){
   let selected = document.getElementById(id);
   let color = "black";
-  if (carbon > 0.0 && carbon <= 0.25) {
+  if (carbon > 0.0 && carbon <= 0.17) {
     color = "green";
-  } else if (carbon > 0.25 && carbon <= 0.66) {
+  } else if (carbon > 0.17 && carbon <= 0.5) {
     color = "#fcca03";
-  } else if (carbon > 0.66 && carbon <= 2.0) {
+  } else if (carbon > 0.5 && carbon <= 1.7) {
     color = "orange";
-  } else if (carbon > 2.0) {
+  } else if (carbon > 1.7) {
     color = "red";
   }
   selected.style.color = color;
-
+  selected.onclick=function(){
+    showPreview(selected, food, carbon, calories, cost, substitutions, totalco2);
+  };
   // need to somehow make a hoverover effect for the provided id so onmouseover it will show a little box with the name
   // of the food, carbon percentage, calories, cost, and provide a possible substitution
 }
