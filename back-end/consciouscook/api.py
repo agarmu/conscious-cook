@@ -60,11 +60,19 @@ def recipe_info():
             continue
 
         if not food_name:
-            print("could not find food name")
             continue
 
         quantity = get_quantity(ingredient)
-        if quantity:
+        if isinstance(quantity, float):
+            if "egg" in food_name:
+                grams_per_orig_unit = 60
+            else:
+                continue
+            find_units = False
+            units = "eggs"
+            n_units = str(quantity)
+        elif quantity:
+            find_units = True
             try:
                 food_mass = quantity.to('gram').magnitude
                 grams_per_orig_unit = food_mass/quantity.magnitude
@@ -80,14 +88,16 @@ def recipe_info():
                     food_mass = None
         else:
             continue
-        try:
-            units = str(quantity.units)
-        except:
-            units = "unknown"
-        try:
-            n_units = str(quantity.magnitude)
-        except: 
-            n_units = "unknown"
+
+        if find_units:
+            try:
+                units = str(quantity.units)
+            except:
+                units = "unknown"
+            try:
+                n_units = str(quantity.magnitude)
+            except: 
+                n_units = "unknown"
         per_unit_stats = {
             "calories": str(round(food_row["Calories-per-gram"] * grams_per_orig_unit)),
             "carbon": str(round(food_row["CO2-percent"] * grams_per_orig_unit)),
