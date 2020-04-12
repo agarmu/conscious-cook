@@ -1,0 +1,29 @@
+{
+  "name": "Conscious Cook",
+  "description": "Save the environment by watching the carbon footprint of the ingredients in your food.",
+  "version": "1.0",
+
+  "permissions": [
+    "declarativeContent",
+    "https://antigluon.pythonanywhere.com/"
+  ],
+
+  "icons": {
+    "128": "consciouscook.png"
+  },
+  
+  "browser_action": {
+    "default_icon": "consciouscook.png",
+    "default_title": "Conscious Cook"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.allrecipes.com/recipe/*"],
+      "run_at": "document_idle",
+      "js": ["contentScript.js"]
+    }
+  ],
+
+  "manifest_version": 2
+}
