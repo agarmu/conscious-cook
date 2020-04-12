@@ -1,0 +1,170 @@
+,Food-Group,Food,CO2-percent,Price-per-pound,Calories-per-gram,CO2-per-calorie,Density (grams-per-cup),Alternates
+0,Beans-Pulses,Baby Lima Beans,0.6314,1.67832,1.15,0.5490434783,,
+1,Beans-Pulses,Blackeye,0.5624,40.824,1.1,0.5112727273,,
+2,Beans-Pulses,Dry Beans,0.745,1.7690400000000002,1.3,0.5730769231,,
+3,Beans-Pulses,Large Lima Beans,1.1462,1.67832,1.5,0.7641333333,,Baby Lima Beans
+4,Beans-Pulses,Garbanzo,0.6436,0.8618399999999999,3.64,0.1768131868,,
+5,Beans-Pulses,Lentils,0.5337,0.9525600000000001,1.16,0.46008620689999996,,
+6,Beans-Pulses,Soybeans,0.5616,0.9525600000000001,4.46,0.1259192825,,
+7,Dairy ,Butter,1.169,3.99168,7.17,0.1630404463,215.53202819999996,
+8,Dairy ,Cottage Cheese,0.2642,1.093351009,2.22,0.119009009,,
+9,Dairy ,Natural Cheese,9.8217,5.360094534,4.4,2.232204545,,
+10,Dairy ,Powdered Milk,9.7262,3.620059855,0.38,25.59526316,,Milk
+11,Dairy ,Milk,1.1942,1.082018201,0.7,1.706,258.89,
+12,Dairy ,Whey,2.0343,13.607999999999999,0.27,7.534444444,,
+13,Dairy ,Yogurt,0.9002,4.5360000000000005,0.59,1.525762712,,
+14,Fruits-Berries,Conventional Apple,0.0706,1673.7839999999999,0.52,0.1357692308,,
+15,Fruits-Berries,Apricot,0.2261,9.072000000000001,4.8,0.047104166669999996,,
+16,Fruits-Berries,Banana,0.3047,0.57,0.56,0.5441071429,,
+17,Fruits-Berries,Blueberry,0.8303,0.78,0.61,1.361147541,,
+18,Fruits-Berries,Boysenberry,0.2019,2.3,0.88,0.2294318182,,
+19,Fruits-Berries,Cantaloupe,0.1372,0.54,0.34,0.4035294118,,
+20,Fruits-Berries,Cherry,0.1826,5.05,0.78,0.2341025641,,
+21,Fruits-Berries,Date,0.4436,8.54,3.71,0.1195687332,,
+22,Fruits-Berries,Fig,1.5373,9.49,0.74,2.0774324319999997,,
+23,Fruits-Berries,Grape,0.2028,9.49,0.46,0.44086956520000004,,
+24,Fruits-Berries,Guava,0.1541,2.0,0.63,0.2446031746,,
+25,Fruits-Berries,Lemon,0.0911,2.5,0.44,0.2070454545,,
+26,Fruits-Berries,Mango,0.07200000000000001,4.2,0.53,0.1358490566,,
+27,Fruits-Berries,Olive,0.1816,10.0,8.84,0.02054298643,,
+28,Fruits-Berries,Orange,0.0972,1.33,0.45,0.21600000000000003,,
+29,Fruits-Berries,Peaches,0.2187,1.25,0.65,0.3364615385,,
+30,Fruits-Berries,Pear,0.0326,1.9,0.44,0.07409090909,,
+31,Fruits-Berries,Pineapple,0.0808,2.75,0.5,0.1616,,
+32,Fruits-Berries,Pomegranate,0.4484,5.0,0.83,0.5402409639,,Mango
+33,Fruits-Berries,Plum,0.2177,1.89,0.71,0.30661971829999995,,
+34,Fruits-Berries,Stawberry,0.3043,2.4,1.06,0.28707547170000003,,
+35,Fruits-Berries,Tomato,0.1798,1.48,0.61,0.2947540984,,
+36,Fruits-Berries,Watermelon,0.0892,1.49,0.3,0.2973333333,,
+37,Grains,Barley,0.2786,0.018939861819999997,3.76,0.07409574467999999,,
+38,Grains,Corn,0.067,3.31,0.5,0.134,,
+39,Grains,Oats,0.3064,2.75,4.21,0.07277909739,,
+40,Grains,Brown Rice,2.191,0.579,0.82,2.67195122,,
+41,Grains,White Rice,3.2495,0.71,0.82,3.962804878,,
+42,Grains,Bran,0.6358,2.2,1.3,0.4890769231,,
+43,Grains,Rye,0.2456,0.29,2.13,0.1153051643,,
+44,Grains,Sorghum,0.2823,1.625,2.9,0.09734482759,,
+45,Grains,Wheat,0.3216,3.291666667,4.02,0.08,,
+46,Grains,Mustard,1.0008,9.95,0.6,1.6680000000000001,249.0,
+47,Herbs,Cilantro,0.1997,6.0,0.25,0.7988,,
+48,Herbs,Peppermint,44.9731,19.3,0.7,64.24728571,,
+49,Meat/Poultry,Beef,17.1236,9.62,9.02,1.898403548,,Chicken
+50,Meat/Poultry,Chicken,3.2460000000000004,3.88,9.0,0.3606666667,,Corn
+51,Meat/Poultry,Egg,2.0187,1.026666667,0.58,3.4805172410000003,294.57142860000005,
+52,Meat/Poultry,Lamb,18.4528,13.5,0.87,21.21011494,,Chicken
+53,Meat/Poultry,Pork,4.2762,6.5,1.24,3.4485483869999998,,Chicken
+54,Meat/Poultry,Poultry,6.2775,4.64,3.07,2.044788274,,Chicken
+55,Meat/Poultry,Turkey,4.1886,1.01,1.71,2.449473684,,Chicken
+56,Miscellaneous Food Crops,Cocoa Beans,0.5724,1.0,0.77,0.7433766234,,
+57,Miscellaneous Food Crops,Cocoa Powder,0.2039,3.1239999999999997,3.89,0.05241645244,,
+58,Miscellaneous Food Crops,Cocoa Butter,0.1351,10.51,8.84,0.015282805430000001,,
+59,Miscellaneous Food Crops,Coffee Beans,1.6606,6.0,1.91,0.8694240837999999,,
+60,Forages,Alfalfa,0.0721,0.00016734808400000001,0.23,0.31347826089999997,,
+61,Forages,Grain,0.2326,3.89,4.07,0.05714987715,,
+62,Nuts/Seeds,Almond,1.8895,8.33,5.79,0.32633851469999997,,Palm
+63,Nuts/Seeds,Canola,0.8477,3.89,8.84,0.09589366516,,
+64,Nuts/Seeds,Palm,0.3288,3.89,8.84,0.03719457014,,
+65,Nuts/Seeds,Pecan,1.6078,9.0,91.0,0.01766813187,,
+66,Nuts/Seeds,Pistachio,1.1135,1.04,5.6,0.1988392857,,Palm
+67,Nuts/Seeds,Rape Seed,0.8876,1.0,8.84,0.1004072398,,
+68,Nuts/Seeds,Safflower,0.6293,20.3,5.16,0.1219573643,,
+69,Nuts/Seeds,Sunflower,0.878,69.99,8.84,0.09932126697,,
+70,Nuts/Seeds,Walnut,0.7609999999999999,9.97,8.84,0.08608597285,7.19,
+71,Oils,Palm Oil,0.445,14.49,8.84,0.05033936652,,
+72,Oils,Canola Oil,1.6984,6.98,8.84,0.1921266968,,Palm Oil
+73,Oils,Rapeseed oil,1.6984,7.98,8.84,0.1921266968,,Palm Oil
+74,Oils,Soybean oil,1.4774,5.66,8.84,0.1671266968,,Palm Oil
+75,Oils,Sunflower oil,1.4845,11.88,8.84,0.1679298643,,Palm Oil
+76,Oils,Corn Oil,0.2538,3.88,9.0,0.0282,,
+77,Processed Foods,Flour,0.6484,3.99,3.7,0.1752432432,120.0,
+78,Processed Foods,Beer,0.3841,5.79,0.43,0.8932558140000001,,
+79,Processed Foods,Chocolate,3.45,0.00853174603,2.3,1.5,3.34,
+80,Processed Foods,Bread,0.5605,2.78,2.75,0.2038181818,126.0,
+81,Processed Foods,Roasted and Ground Coffee,2.5091,11.98,0.71,3.533943662,,
+82,Processed Foods,Cooking Oil,1.7479,32.48,2.83,0.6176325088,,
+83,Processed Foods,Corn Syrup,0.3273,5.0,2.86,0.11444055939999999,,
+84,Processed Foods,Hams,9.3235,4.0,0.97,9.61185567,,
+85,Processed Foods,Hash Browns,3.9548,2.24,2.65,1.4923773580000002,,
+86,Processed Foods,Ice Cream,1.8236,4.57,2.22,0.8214414414,,
+87,Processed Foods,Macaroni,1.2378,2.8,0.61,2.0291803280000003,,
+88,Processed Foods,Malt Whisky,2.7355,7.0,3.83,0.714229765,,
+89,Processed Foods,Malted Barley,0.8681,5.0,3.73,0.23273458449999998,,
+90,Processed Foods,Margarine,4.5178,6.98,7.17,0.630097629,,
+91,Processed Foods,Marinara Sauce,0.8296,3.83,0.5,1.6592,,
+92,Processed Foods,Mashed Potatoes,4.5178,8.94,0.89,5.076179775,,
+93,Processed Foods,Oat Bran,0.4874,3.68,3.95,0.12339240509999999,,
+94,Processed Foods,Oatmeal,0.4874,2.94,3.94,0.1237055838,,
+95,Processed Foods,Orange Juice,2.1413,3.98,0.45,4.758444443999999,,
+96,Processed Foods,Vegetable Oil,1.7882,2.44,0.47,3.804680851,,
+97,Processed Foods,Pastry Flour,0.5278,11.79,5.58,0.09458781362,,
+98,Processed Foods,Peanut Butter,1.5283,5.44,5.89,0.2594736842,,
+99,Processed Foods,Pepperoni,13.0722,2.98,5.04,2.593690476,,Tofu
+100,Processed Foods,Pita Bread,0.8389,3.0,2.75,0.3050545455,,
+101,Processed Foods,Potato Chips,3.4373,1.5,4.87,0.7058110883,,
+102,Processed Foods,Sausage,9.3555,3.48,1.19,7.861764706000001,,Tofu
+103,Processed Foods,Shrimp Feed,1.2137,22.99,0.72,1.6856944440000001,,Pita Bread
+104,Processed Foods,Salt,0.2224,1.46,0.1,2.224,2.8,
+105,Processed Foods,Soft Drinks,1.7981,2.0,0.04,44.9525,,
+106,Processed Foods,Shortening,0.6711,8.09,8.84,0.07591628958999999,,
+107,Processed Foods,Soybean Meal,0.6711,8.09,1.47,0.45653061219999996,,
+108,Processed Foods,Soymilk,0.6872,3.99,1.01,0.6803960396,,
+109,Processed Foods,Sponge Cake,1.0343,10.99,3.74,0.2765508021,,
+110,Processed Foods,Sugar Cookies,1.3036,5.0,4.26,0.30600938969999997,,
+111,Processed Foods,Brown Sugar,3.0181,0.7,3.07,0.9830944625,454.2857143,
+112,Processed Foods,Raw Sugar,3.0181,0.7,3.07,0.9830944625,454.2857143,
+113,Processed Foods,White Sugar,0.5039,0.7,3.07,0.1641368078,454.2857143,Raw Sugar
+114,Processed Foods,Refined Sugar,0.5039,0.7,3.07,0.1641368078,454.2857143,Raw Sugar
+115,Processed Foods,Breakfast Cereal,2.0788,3.12,4.07,0.5107616708,,
+116,Processed Foods,Tofu,0.7087,2.5,0.78,0.9085897436,,
+117,Processed Foods,Tomato Ketchup,2.255,2.89,0.61,3.696721311,225.0,
+118,Processed Foods,Tomato Paste,1.8184,2.0,0.61,2.9809836069999998,,
+119,Processed Foods,Wheat Bread Rolls,9.7453,3.85,3.1,3.1436451610000002,,
+120,Processed Foods,Wine,0.6439,15.0,0.19,3.388947368,,
+121,Root Crops,Beetroot,0.0937,2.31,0.43,0.2179069767,,
+122,Root Crops,Carrot,0.113,0.69,0.26,0.4346153846,,
+123,Root Crops,Radish,0.1593,1.5,0.48,0.331875,,
+124,Root Crops,Onion,0.2946,1.69,3.41,0.08639296188,,
+125,Root Crops,Peanut,0.5734,0.2,5.67,0.10112874779999999,,
+126,Seafood,Char,9.7337,9.0,3.8,2.5615,,Cod
+127,Seafood,Cod,2.2194,2.39,9.02,0.24605321510000003,,
+128,Seafood,Catfish,8.863,1.13,0.95,9.329473684,,Cod
+129,Seafood,Salmon,4.5653,15.0,1.42,3.215,,Cod
+130,Seafood,Carp,9.0603,0.14,1.27,7.134094488,,Cod
+131,Seafood,Flatfish,2.5780000000000003,19.99,0.7,3.682857143,,Cod
+132,Seafood,Herring,1.6055,19.99,1.58,1.0161392409999999,,Cod
+133,Seafood,Mackerel,1.4329,1.1,2.05,0.6989756098000001,,Cod
+134,Seafood,Shrimp,3.7763,0.18,0.72,5.2448611110000005,,Cod
+135,Seafood,Mullet,4.8139,0.75,1.17,4.114444444,,Cod
+136,Seafood,Mussels,0.0387,2.0,0.87,0.04448275862,,Cod
+137,Seafood,Lobster,4.888999999999999,40.0,0.77,6.349350649,,Cod
+138,Seafood,Oyster,10.9361,1.8,1.41,7.756099291,,Cod
+139,Seafood,Sea Bass,9.9227,8.0,1.24,8.002177419,,Cod
+140,Seafood,Tilapia,10.0703,3.35,0.96,10.48989583,,Cod
+141,Seafood,Trout,3.932,8.99,1.04,3.7807692310000003,,Cod
+142,Seafood,Tuna,2.948,40.0,1.44,2.047222222,,Cod
+143,Tubers,Potatoes,0.2448,1.88,0.62,0.3948387097,,
+144,Tubers,Russet Potatoes,0.3259,4.3,0.62,0.5256451613,,
+145,Tubers,Sweet Potatoes,0.4256,1.88,1.82,0.23384615379999998,,
+146,Vegetables,Artichokes,0.2587,2.13,0.47,0.5504255319,,
+147,Vegetables,Asparagus,0.8841,1.27,0.69,1.281304348,,
+148,Vegetables,Beans,0.1383,1.59,0.29,0.4768965517,,
+149,Vegetables,Bittermelon,0.121,0.65,0.3,0.4033333333,,
+150,Vegetables,Brocolli,0.4042,3.0,0.62,0.6519354839,,
+151,Vegetables,Brussel Sprout,0.2621,3.74,0.43,0.6095348837,,
+152,Vegetables,Cabbage,0.1237,1.02,0.25,0.4948,,
+153,Vegetables,Cauliflower,0.3058,3.0,0.25,1.2232,,
+154,Vegetables,Celery,0.1168,1.13,3.92,0.029795918369999997,,
+155,Vegetables,Cucumber,0.0466,0.71,0.15,0.31066666670000004,,
+156,Vegetables,Eggplant,0.5136,2.34,0.25,2.0544,,
+157,Vegetables,Garlic,0.9504,4.49,3.31,0.2871299094,,
+158,Vegetables,Green Beans,0.4394,1.59,0.31,1.417419355,,
+159,Vegetables,Lemongrass,0.0739,9.07,0.44,0.1679545455,,
+160,Vegetables,Lettuce,0.1917,2.39,0.13,1.474615385,,
+161,Vegetables,Okra,0.2499,8.51,0.33,0.7572727273000001,,Lettuce
+162,Vegetables,Parsley,0.1481,1.23,2.92,0.05071917808,,
+163,Vegetables,Peas,0.0966,2.27,0.5,0.1932,,
+164,Vegetables,Bell Pepper,0.2572,2.99,1.41,0.1824113475,,
+165,Vegetables,Sweet Pepper,10.7613,2.99,0.27,39.85666667,,Bell Pepper
+166,Vegetables,Pumpkin,0.14400000000000002,0.13,0.26,0.5538461538,,Squash
+167,Vegetables,Spinach,0.3382,1.0,0.23,1.4704347830000002,,
+168,Vegetables,Squash,0.3573,1.59,0.28,1.2760714290000001,,Pumpkin
