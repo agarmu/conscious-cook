@@ -21,7 +21,7 @@
     {
       "matches": ["*://*.allrecipes.com/recipe/*"],
       "run_at": "document_idle",
-      "js": ["contentScript.js"]
+      "js": ["contentScript.js", "popper.js"]
     }
   ],
 
