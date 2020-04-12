@@ -121,11 +121,12 @@ def example_recipe_info():
                 "carbon": 50,
                 "cost": 10.51,
             },
+            "carbon_rating": 25,
             "element_id": "ingredient1_id",
             "substitutions": {
                 "substitute1_name":{
                     "per_unit": {
-                        "calories": 9002,
+                        "calories": 9002,   
                         "carbon": 40,
                         "cost": 8.51,
                     }
