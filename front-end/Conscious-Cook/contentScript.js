@@ -56,7 +56,7 @@ function foodParser() {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(test) // write data here instead of test once backend is working
+        body: JSON.stringify(data) // write data here instead of test once backend is working
       });
       const content = await rawResponse.json();
     
@@ -73,6 +73,7 @@ function foodParser() {
 window.onload = foodParser;
 
 function jamesthing(data) {
+  console.log(data);
   let total_carbon = 0;
   let ingredient_total = 0;
   let total_calories = 0;
@@ -87,24 +88,24 @@ function jamesthing(data) {
     let cost = data[Object.keys(data)[x]]["per_unit"]["cost"] * data[Object.keys(data)[x]]["n_units"];
     total_cost += cost;
     let subs = data[Object.keys(data)[x]]["substitutions"];
-    let carbon = data[Object.keys(data)[x]]["carbpn_rating"];
+    let rating = data[Object.keys(data)[x]]["carbon_rating"];
     ingredient_total++;
-    displayData(id, food, carbon, calories, cost, subs);
+    displayData(id, food, rating, calories, cost, subs, carbon);
   }
   let average_carbon = total_carbon / total_calories;
   alert(average_carbon)
   title = document.getElementsByClassName("recipe-print__title")[0].innerHTML;
   let color = "black";
-  if (average_carbon > 0.0 && average_carbon <= 0.25) {
+  if (average_carbon > 0.0 && average_carbon <= 0.17) {
     color = "green";
     document.getElementsByClassName("recipe-print__title")[0].innerHTML = title + " - Earth-Friendly Choice!";
-  } else if (average_carbon > 0.25 && average_carbon <= 0.66) {
+  } else if (average_carbon > 0.17 && average_carbon <= 0.5) {
     color = "#fcca03";
     document.getElementsByClassName("recipe-print__title")[0].innerHTML = title + " - Fairly Small Carbon Footprint";
-  } else if (average_carbon > 0.66 && average_carbon <= 2.0) {
+  } else if (average_carbon > 0.5 && average_carbon <= 1.7) {
     color = "orange";
     document.getElementsByClassName("recipe-print__title")[0].innerHTML = title + " - Maybe find something greener?";
-  } else if (average_carbon > 2.0) {
+  } else if (average_carbon > 1.7) {
     color = "red";
     document.getElementsByClassName("recipe-print__title")[0].innerHTML = title + " - Consider the planet!";
   }
@@ -114,16 +115,16 @@ function jamesthing(data) {
   // total_cost, total_calories, average_carbon
 }
 
-function displayData(id, food, carbon, calories, cost, substitutions){
+function displayData(id, food, carbon, calories, cost, substitutions, totalco2){
   let selected = document.getElementById(id);
   let color = "black";
-  if (carbon > 0.0 && carbon <= 0.25) {
+  if (carbon > 0.0 && carbon <= 0.17) {
     color = "green";
-  } else if (carbon > 0.25 && carbon <= 0.66) {
+  } else if (carbon > 0.17 && carbon <= 0.5) {
     color = "#fcca03";
-  } else if (carbon > 0.66 && carbon <= 2.0) {
+  } else if (carbon > 0.5 && carbon <= 1.7) {
     color = "orange";
-  } else if (carbon > 2.0) {
+  } else if (carbon > 1.7) {
     color = "red";
   }
   selected.style.color = color;
