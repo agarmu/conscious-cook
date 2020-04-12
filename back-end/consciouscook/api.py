@@ -63,7 +63,7 @@ def recipe_info():
             "per_unit": {
                 "calories": 4000,
                 "carbon": 5000,
-                "cost": 600.00,
+                "cost": "600.00",
             },
             "element_id": request_json[ingredient],
             "substitutions": {
@@ -71,7 +71,7 @@ def recipe_info():
                     "per_unit": {
                         "calories": 9002,
                         "carbon": 40,
-                        "cost": 8.51,
+                        "cost": "8.51",
                     }
                 } 
             }
