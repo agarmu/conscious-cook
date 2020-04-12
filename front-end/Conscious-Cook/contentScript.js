@@ -79,7 +79,7 @@ function jamesthing(data) {
   let total_cost = 0;
   for( x in Object.keys(data)) {
     let food = Object.keys(data)[x];
-    let carbon = data[Object.keys(data)[x]]["per_unit"]["carbon"];
+    let carbon = data[Object.keys(data)[x]]["per_unit"]["carbon"] * data[Object.keys(data)[x]]["n_units"];
     total_carbon += carbon;
     let id = data[Object.keys(data)[x]]["element_id"];
     let calories = data[Object.keys(data)[x]]["per_unit"]["calories"] * data[Object.keys(data)[x]]["n_units"];
@@ -87,10 +87,12 @@ function jamesthing(data) {
     let cost = data[Object.keys(data)[x]]["per_unit"]["cost"] * data[Object.keys(data)[x]]["n_units"];
     total_cost += cost;
     let subs = data[Object.keys(data)[x]]["substitutions"];
+    let carbon = data[Object.keys(data)[x]]["carbpn_rating"];
     ingredient_total++;
     displayData(id, food, carbon, calories, cost, subs);
   }
-  let average_carbon = total_carbon / ingredient_total;
+  let average_carbon = total_carbon / total_calories;
+  alert(average_carbon)
   title = document.getElementsByClassName("recipe-print__title")[0].innerHTML;
   let color = "black";
   if (average_carbon > 0.0 && average_carbon <= 0.25) {
