@@ -49,13 +49,14 @@ def recipe_info():
     for ingredient in raw_ingredients:
         food_name = get_food(ingredient)
         quantity = get_quantity(ingredient)
-        if quantity is not None:
+        try:
             units = str(quantity.units)
-            n_units = float(quantity.magnitude)
-        else:
+        except:
             units = "unknown"
+        try:
+            n_units = float(quantity.magnitude)
+        except: 
             n_units = "unknown"
-        
         info[food_name] = {
             "units": units,
             "n_units": n_units,
