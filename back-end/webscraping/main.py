@@ -32,7 +32,3 @@ def redefine():
     commoditySelector = Select(driver.find_element_by_name(commoditySelectorName))
     catOpt, comOpt = getOptions(categorySelector, 'value'), getOptions(commoditySelector, 'value')
 
-groupSelector.select_by_value("Food Commodities")
-redefine()
-print(catOpt)
-driver.close()
