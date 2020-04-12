@@ -114,6 +114,10 @@ function jamesthing(data) {
   // total_cost, total_calories, average_carbon
 }
 
+function showPreview(reference, carbon, calories, cost, substitutions){
+  return null
+}
+
 function displayData(id, food, carbon, calories, cost, substitutions){
   let selected = document.getElementById(id);
   let color = "black";
