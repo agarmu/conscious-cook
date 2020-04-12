@@ -54,7 +54,7 @@ def recipe_info():
         except:
             units = "unknown"
         try:
-            n_units = float(quantity.magnitude)
+            n_units = str(quantity.magnitude)
         except: 
             n_units = "unknown"
         info[food_name] = {
@@ -77,22 +77,6 @@ def recipe_info():
             }
         }
     return json.dumps(info)
-    #below should never be run
-    return json.dumps({
-        "ingredient_name": {
-            "units": "unit_name",
-            "n_units": 4, 
-            "per_unit": {
-                "calories": 9001,
-                "carbon": 50,
-                "cost": 10.51,
-            },
-            "element_id": "ingredient_id",
-            "substitutions": {
-                "etc":"etc"
-            }
-        }
-    })
 
 @bp.route('/recipe_info/example', methods=['GET', 'POST'])
 def example_recipe_info():
